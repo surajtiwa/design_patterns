@@ -1,0 +1,2 @@
+{"msg":"This is a message again with dependencies inversion","timestamp":{"nano":584672400,"year":2024,"monthValue":5,"dayOfMonth":25,"hour":15,"minute":54,"second":52,"month":"MAY","dayOfWeek":"SATURDAY","dayOfYear":146,"chronology":{"id":"ISO","calendarType":"iso8601","isoBased":true}}}
+2024-05-25T15:54:52.584672400:This is a message again with Text formatting
