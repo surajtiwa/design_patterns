@@ -1,6 +1,7 @@
-package com.coffeepoweredcrew.factorymethod;
+package designPatterns.creational.factoryMethod;
 
-import com.coffeepoweredcrew.factorymethod.message.Message;
+
+import designPatterns.creational.factoryMethod.message.Message;
 
 /**
  * This is our abstract "creator". 
@@ -9,5 +10,13 @@ import com.coffeepoweredcrew.factorymethod.message.Message;
  */
 public abstract class MessageCreator {
 
-	
+	public Message getMessage(String message) {
+        Message msg=createMessage();//use this abstract message
+        msg.addDefaultHeaders();
+        msg.encrypt();
+        return msg;
+    }
+
+    //abstract method
+    public abstract Message createMessage();
 }

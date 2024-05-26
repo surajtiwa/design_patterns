@@ -1,4 +1,4 @@
-package designPatterns.creational.builder;
+package designPatterns.creational.builder.example1;
 
 import java.time.LocalDate;
 //Builder Pattern is used to create Complex Object in a simplified way

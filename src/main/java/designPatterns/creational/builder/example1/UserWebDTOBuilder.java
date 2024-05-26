@@ -1,4 +1,4 @@
-package designPatterns.creational.builder;
+package designPatterns.creational.builder.example1;
 
 import java.time.LocalDate;
 import java.time.Period;

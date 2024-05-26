@@ -1,4 +1,4 @@
-package designPatterns.creational.builder;
+package designPatterns.creational.builder.example1;
 
 //A product in builder pattern
 public class UserWebDTO implements UserDTO {

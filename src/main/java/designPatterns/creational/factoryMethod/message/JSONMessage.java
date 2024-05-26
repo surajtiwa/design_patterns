@@ -1,4 +1,4 @@
-package com.coffeepoweredcrew.factorymethod.message;
+package designPatterns.creational.factoryMethod.message;
 
 public class JSONMessage extends Message {
 

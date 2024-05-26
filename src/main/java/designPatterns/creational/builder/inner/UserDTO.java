@@ -1,10 +1,10 @@
-package com.cpc.dp.builder2;
+package designPatterns.creational.builder.inner;
 
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.temporal.ChronoUnit;
 
-import com.cpc.dp.builder.Address;
+
+import designPatterns.creational.builder.example1.Address;
 
 //Product class
 public class UserDTO {
@@ -47,8 +47,8 @@ public class UserDTO {
 	public static UserDTOBuilder getBuilder() {
 		return new UserDTOBuilder();
 	}
-	//Builder
-	public static class UserDTOBuilder {
+	//Builder is declared as a static class
+	 static class UserDTOBuilder {
 		
 		private String firstName;
 		

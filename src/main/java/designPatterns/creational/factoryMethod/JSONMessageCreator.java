@@ -1,11 +1,16 @@
-package com.coffeepoweredcrew.factorymethod;
+package designPatterns.creational.factoryMethod;
 
-import com.coffeepoweredcrew.factorymethod.message.JSONMessage;
-import com.coffeepoweredcrew.factorymethod.message.Message;
+
+import designPatterns.creational.factoryMethod.message.JSONMessage;
+import designPatterns.creational.factoryMethod.message.Message;
 
 /**
  * Provides implementation for creating JSON messages
  */
 public class JSONMessageCreator extends MessageCreator {
-	
+
+    @Override
+    public Message createMessage() {
+        return new JSONMessage();
+    }
 }

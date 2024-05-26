@@ -1,4 +1,4 @@
-package com.coffeepoweredcrew.simplefactory;
+package designPatterns.creational.simpleFactory;
 
 import java.time.LocalDateTime;
 

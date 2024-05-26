@@ -1,4 +1,4 @@
-package com.coffeepoweredcrew.simplefactory;
+package designPatterns.creational.simpleFactory;
 
 /**
  * Represents a blog post. 

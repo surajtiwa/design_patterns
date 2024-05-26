@@ -1,11 +1,12 @@
-package com.cpc.dp.builder2;
+package designPatterns.creational.builder.inner;
+
+import designPatterns.creational.builder.example1.Address;
+import designPatterns.creational.builder.example1.User;
 
 import java.time.LocalDate;
 
-import com.cpc.dp.builder.Address;
-import com.cpc.dp.builder.User;
-import com.cpc.dp.builder2.UserDTO.UserDTOBuilder;
 
+//to create Immutable object using builder pattern we need to have the builder inside the object class as a static class
 public class Client {
 
 	public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class Client {
 	/**
 	 * This method serves the role of director in builder pattern.
 	 */
-	private static UserDTO directBuild(UserDTOBuilder builder, User user) {
+	private static UserDTO directBuild(UserDTO.UserDTOBuilder builder, User user) {
 		return builder.withFirstName(user.getFirstName()).withLastName(user.getLastName())
 				.withBirthday(user.getBirthday()).withAddress(user.getAddress()).build();
 	}

@@ -1,4 +1,4 @@
-package designPatterns.creational.builder;
+package designPatterns.creational.builder.example1;
 
 //Interface implemented by "products"
 public interface UserDTO {

@@ -1,4 +1,4 @@
-package com.coffeepoweredcrew.prototype;
+package designPatterns.creational.prototype;
 
 public class Swordsman extends GameUnit {
 
@@ -13,4 +13,8 @@ public class Swordsman extends GameUnit {
 		return "Swordsman "+state+" @ "+getPosition();
 	}
 
+	@Override
+	protected void reset() {
+		state = "idle";
+	}
 }
