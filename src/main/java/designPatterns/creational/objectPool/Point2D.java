@@ -1,4 +1,4 @@
-package com.coffeepoweredcrew.objectpool;
+package designPatterns.creational.objectPool;
 
 public class Point2D {
 

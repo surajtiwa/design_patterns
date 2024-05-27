@@ -1,7 +1,7 @@
-package com.coffeepoweredcrew.objectpool;
+package designPatterns.creational.objectPool;
 
 //Represents our abstract reusable
-public interface Image{
+public interface Image extends Poolable{
 
     void draw();
 

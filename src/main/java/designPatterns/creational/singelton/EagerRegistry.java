@@ -1,4 +1,4 @@
-package designPatterns.creational.singelton.eager;
+package designPatterns.creational.singelton;
 
 /**
  * This class uses eager initialization of singleton instance.

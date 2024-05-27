@@ -1,4 +1,4 @@
-package designPatterns.creational.singelton.eager;
+package designPatterns.creational.singelton;
 
 /**
  * Singleton pattern using lazy initialization holder class. This ensures that, we have a lazy initialization
@@ -7,19 +7,16 @@ package designPatterns.creational.singelton.eager;
 public class LazyRegistryIODH {
 
     private LazyRegistryIODH() {
+        System.out.println("LazyRegistryIODH in singelton");
     }
 
-    private static LazyRegistryIODH INSTANCE;
+
 
     public static LazyRegistryIODH getInstance() {
+        return RegistryIODH.INSTANCE;
+    }
 
-        if (INSTANCE == null) {
-            synchronized (LazyRegistryIODH.class) {//two threads were waiting
-                if (INSTANCE == null) {//double check locking
-                    INSTANCE = new LazyRegistryIODH();
-                }
-            }
-        }
-        return INSTANCE;
+    private static class RegistryIODH {//cannot make refernce from outside
+        static LazyRegistryIODH INSTANCE = new LazyRegistryIODH();
     }
 }
